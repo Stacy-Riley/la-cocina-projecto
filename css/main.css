@@ -11,11 +11,7 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-}
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -83,9 +79,343 @@ textarea {
   resize: vertical;
 }
 
+
+/* we are working on header and footer mobil first*/
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/***General Styles Mobil First****/
+*,
+* ::after,
+* ::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin:0;
+}
+
+html {
+  font-size: 16px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  max-width: 1200px;
+  text-align: left;
+}
+
+ul, 
+ol {
+  list-style-type: none;
+}
+
+a {
+	color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0.7rem
+}
+
+h1 {
+  color: #000000;
+  font-size: 2.2em;
+}
+
+h2 {
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1.875em;
+}
+
+h3, 
+h4 {
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+p {
+	color: #000000;
+}
+
+img {
+  max-width: 100%; 
+  max-height: 100%;
+}
+
+figure {
+  margin: 0;
+  
+}
+
+address {
+  color: #000000;
+  font-style: normal;
+}
+
+.content-wrapper {
+  margin: auto;
+  width: 90%;
+}
+
+/*NavBar Area*/
+.logo {
+  width: 35%;
+}
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  /*background-color: #555;*/
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #EBEBEB;
+  position: relative;
+  width: 100%;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  font-size: 2em;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #EBEBEB;
+  color: white;
+}
+
+*/
+.food {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+  overflow: hidden;
+  height: 200px;
+  width: 200px;
+}
+
+/*Images for other pages:
+/* .plate-2 { . 
+ background-image: url('../img/travis-yewell-OGJp-AJeIoM-unsplash.jpg');
+}
+.plate-3 {
+  background-image: url('../img/edgar-castrejon-J04BD4ysoh8-unsplash.jpg');
+}
+
+.plate-8 {
+  background-image: url('../img/jed-owen-sr0kF2fENPo-unsplash.jpg');
+}
+.plate-9 {
+  background-image: url('../img/daniel-lloyd-blunk-fernandez-UIp7saJclQw-unsplash.jpg');
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* https://alvarotrigo.com/blog/hamburger-menu-css/   */
+
+/* continue troubleshooting the hamburger navbar - try code checker next*/
+
+
+/*
+.navbar {
+  width: 100%;
+  box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+}
+
+.navbar .menu-items {
+  display: flex;
+}
+
+.nav-container .menu-items li {
+  list-style: none;
+  
+}
+
+.navbar .nav-container a {
+  text-decoration: none;
+  color: #0e2431;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0.7rem;
+}
+
+.navbar .nav-container a:hover{
+    font-weight: bolder;
+}
+
+.nav-container {
+  display: block;
+  position: relative;
+  height: 60px;
+}
+
+.nav-container .checkbox {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: 20px;
+  left: 20px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.nav-container .hamburger-lines {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-container .hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #0e2431;
+}
+
+.nav-container .hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.navbar .menu-items {
+  padding-top: 120px;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  height: 100vh;
+  width: 100%;
+  transform: translate(-150%);
+  display: flex;
+  flex-direction: column;
+  margin-left: -40px;
+  padding-left: 50px;
+  transition: transform 0.5s ease-in-out;
+  text-align: center;
+}
+
+.navbar .menu-items li {
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.logo {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  font-size: 1.2rem;
+  color: #0e2431;
+  width: 20%;
+}
+
+.nav-container input[type="checkbox"]:checked ~ .menu-items {
+  transform: translateX(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  transform: rotate(-45deg);
+}
+/*
+.nav-container input[type="checkbox"]:checked ~ .logo{
+  /*display: none;*/
+/*}
+
+
+*/
+
+
+
+
+
+
 
 /* ==========================================================================
    Helper classes

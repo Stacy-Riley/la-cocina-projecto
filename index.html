@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>La Cocina</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,17 +15,262 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
+  <script src="https://use.fontawesome.com/123b65bdbe.js"></script>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
-</head>
+  </head>
 
 <body>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <!---------------------- Header Section ------------------->
+  <header class="mobile-container">
+    <nav class="topnav">
+      <a href="#home" class="active">
+        <img class="logo" src="img/logo.png" alt="logo">
+      </a>
+      <div id="myLinks">
+        
+        <a href="especiales/index.html">Especiales</a>
+        <a href="desayuno/index.html">Desayuno</a>
+        <a href="almuerzo/index.html">Almuerzo</a>
+        <a href="merienda/index.html">Merienda</a>
+        <a href="bebidas/index.html">Bebidas</a>
+        <a href="nuestra-historia/index.html">Nuestra Historia</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="navBar()">
+        <i class="fa fa-bars"></i>
+      </a>
+        
+    </nav>
+  
+    <div>
+      <figure class="plate-1">
+        <!--Photo by Hybrid Storytellers on Unsplash-->
+        <img src="img/hybrid-storytellers-2M9-LTrpxJw-unsplash.jpg" alt="plate of food">
+      </figure>
+      <figure class="plate-2">
+        <!--Photo by Spencer Davis on Unsplash-->
+        <img src="img/spencer-davis-r9WlkELhmI8-unsplash.jpg" alt="plate of food">
+      </figure>
+      <figure class="plate-3">
+        <!--Photo by Ryan Concepcion on Unsplash-->
+        <img src="img/ryan-concepcion-50KffXbjIOg-unsplash.jpg" alt="plate of food">
+      </figure>
+      <figure class="plate-4">
+        <!--Photo by Nadine Primeau on Unsplash-->
+        <img src="img/nadine-primeau--ftWfohtjNw-unsplash.jpg" alt="plate of food">
+      </figure>
+  
+    </div>
+    <figure>
+      <img src="img/katlyn-giberson-OkhcMbf3vQ0-unsplash.jpg" alt="restaurant image">
+      <!--Photo by Katlyn Giberson on Unsplash-->
+    </figure>
+
+    <div>
+      <figure class="plate-5">
+        <!--Photo by Spencer Davis on Unsplash-->
+        <img src="img/spencer-davis-hs2076lrvKQ-unsplash.jpg" alt="plate of food">
+      </figure>
+      <figure class="plate-6">
+        <!--Photo by Lottie Griffiths on Unsplash-->
+        <img src="img/lottie-griffiths-pvTgyioFSTY-unsplash.jpg" alt="plate of food">
+      </figure>
+  
+    </div>
+  </header>
+
+
+
+    <!-- <div> . Images for other pages,
+      <div class="plate-wrapper slider" id="slideshow">
+
+        <div class="food plate-2 images" ></div>   Photo by Travis Yewell on Unsplash     
+        <div class="food plate-3 images"></div>    Photo by Edgar Castrejon on Unsplash
+        <div class="food plate-8 images"></div>    Photo by Jed Owen on Unsplash
+        <div class="food plate-9 images"></div>    Photo by Daniel Lloyd Blunk-Fernández on Unsplash
+        
+      </div>
+      
+      
+    </div> -->
+    
+
+    <main>
+      <div class="content-wrapper">
+
+      </div>
+      <div>
+        <h1></h1>
+        <h3></h3>
+      </div>
+    </main>
+
+
+
+
+
+
+   <!--   <div class="mobile-container">
+
+      <!-- Top Navigation Menu -->
+  <!--    <div class="topnav">
+        <a href="img/logo.png" class="active">La Cocina</a>
+        
+        <div id="myLinks">
+          <a href="nuestra-historia/index.html">Nuestra Historia</a>
+          <a href="especiales/index.html">Especiales</a>
+          <a href="desayuno/index.html">Desayuno</a>
+          <a href="almuerzo/index.html">Almuerzo</a>
+          <a href="merienda/index.html">Merienda</a>
+          <a href="bebidas/index.html">Bebidas</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      
+      <div class="heading-section" style="padding-left:16px">
+        <h3>La Cocina Restaurant</h3>
+        <p>This example demonstrates how a navigation menu on a mobile/smart phone could look like.</p>
+        <p>Click on the hamburger menu (three bars) in the top right corner, to toggle the menu.</p>
+      </div>
+      
+     
+    </div> -->
+
+   <!--- <nav>
+      <div class="nav-bar">
+        <div class="content-wrapper nav-container">
+          <input class="checkbox" type="checkbox" name="" id="" />
+          
+          <div class="hamburger-lines">
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+          </div>
+
+          <figure class="logo">
+            <a href="#">
+              <img src="img/logo.png" alt="La Cocina logo">
+            </a>
+          </figure>
+
+          <ul class="menu-items">
+            <li><a href="nuestra-historia/index.html">Nuestra Historia</a></li>
+            <li><a href="especiales/index.html">Especiales</a></li>
+            <li><a href="desayuno/index.html">Desayuno</a></li>
+            <li><a href="almuerzo/index.html">Almuerzo</a></li>
+            <li><a href="merienda/index.html">Merienda</a></li>
+            <li><a href="bebidas/index.html">Bebidas</a></li>
+          </ul>
+        </div> 
+      </div>
+    </nav> -->
+   <!-- <div class="content-wrapper container">
+      <figure>  
+        <a href="#">
+          <img src="img/logo.png" alt="La Cocina logo">
+        </a>
+      </figure>
+
+      <div class="header-divider"></div>
+      <nav>
+        <ul>
+          <li><a href="nuestra-historia/index.html">Nuestra Historia</a></li>
+          <li><a href="especiales/index.html">Especiales</a></li>
+          <li><a href="desayuno/index.html">Desayuno</a></li>
+          <li><a href="almuerzo/index.html">Almuerzo</a></li>
+          <li><a href="merienda/index.html">Merienda</a></li>
+          <li><a href="bebidas/index.html">Bebidas</a></li>
+        </ul>
+      </nav>
+    </div> -->
+  
+  <!---------------------- Main Section ------------------->
+  
+ <!-- <main>
+    <section class="hero-area">
+      <div class="content-wrapper">
+        <div>
+          <figure>
+            <img src="" alt="una foto de un plato de comida">
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img src="" alt="una foto de un plato de comida">
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img src="" alt="una foto de un plato de comida">
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img src="" alt="una foto de un plato de comida">
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img src="" alt="una foto de un plato de comida">
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img src="" alt="una foto de un plato de comida">
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img src="" alt="una foto de un plato de comida">
+          </figure>
+        </div>
+
+      </div>
+    </section>
+  </main> 
+-->
+  <!---------------- Footer Section ----------------------->
+ <!-- <footer>
+    <div class="content-wrapper">
+      <div class="footer-content">
+
+        <div class="contact">
+          <address>
+            <p>Calle 32 y Avenida Umiña 2 Manta, Ecuador &#x2015; +593 098 555 5555</p>
+          </address>
+        </div>
+        
+        <div class="social">
+          <div class="social-icons">
+            <p>
+              <a href="https://www.facebook.com/LaCocina" target="_blank">Facebook</a>
+            </p>
+            <p>
+              <a href="https://www.instagram.com/skillcrush/" target="_blank">Instagram</a>
+            </p>
+          </div>
+        </div>
+
+      </div> 
+    </div> 
+  </footer>
+-->  
+
+
+
+
+
+
+
+
+
+
+
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
