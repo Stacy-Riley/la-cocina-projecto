@@ -163,7 +163,7 @@ address {
 
 .content-wrapper {
   margin: auto;
-  width: 90%;
+  /* width: 90%; */
 }
 
 /*NavBar Area*/
@@ -217,7 +217,44 @@ address {
   color: white;
 }
 
+/* .homepage-images{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap; 
+  
+}  */
+
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+}
+.top-plates{
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden; 
+} 
+
+/* look at grid format for homepage images */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout */
+/*
+.plate-1 {
+  flex: 1;
+}
+.plate-2 {
+  flex: 1;
+}
+.plate-3 {
+  flex: 1;
+}
+.plate-4 {
+  flex: 1;
+}
 */
+
+/*
 .food {
   background-size: cover;
   background-repeat: no-repeat;
@@ -226,7 +263,7 @@ address {
   height: 200px;
   width: 200px;
 }
-
+*/
 /*Images for other pages:
 /* .plate-2 { . 
  background-image: url('../img/travis-yewell-OGJp-AJeIoM-unsplash.jpg');
