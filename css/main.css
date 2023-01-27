@@ -147,7 +147,7 @@ p {
 }
 
 img {
- max-width: 100%; 
+ width: 100%; 
   
 }
 
@@ -219,28 +219,36 @@ address {
 
 /* Homepage images: */
 .max-width-wrapper {
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
   padding-left: 16px;
-  padding-right: 16px;
+  padding-right: 16px; */
 }
 
 .content-wrapper-top {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr;
   width: 50% 50%;
+  justify-content: center; */
+  display: flex;
   justify-content: center;
-  
-  
+  align-items: center;
+  flex-flow: row wrap
 }
-/* .top-plates figure {
-  width: 250px;
+
+.top-plates {
+  /* width: 50%; */
+}
+
+.top-plates figure {
+  width: 150px;
   height: 200px;
-  padding: 10px;
-}*/
+}
+
 .top-plates figure img {
+ width: 100%;
  overflow: hidden;
 }
  
