@@ -243,15 +243,17 @@ address {
 }
 
 .top-plates figure {
-  width: 150px;
+  width: 50%;
   height: 200px;
+  margin: auto;
+  overflow: hidden;
 }
 
-.top-plates figure img {
+/* .top-plates figure img {
  width: 100%;
  overflow: hidden;
 }
- 
+  */
 
 
 
