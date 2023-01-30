@@ -161,10 +161,10 @@ address {
   font-style: normal;
 }
 
-.content-wrapper {
+/* .content-wrapper {
   margin: auto;
-  /* width: 90%; */
-}
+  /* width: 90%; 
+} */
 
 /*NavBar Area*/
 .logo {
@@ -172,7 +172,7 @@ address {
 }
 
 .mobile-container {
-  max-width: 480px;
+  /* max-width: 480px; */
   margin: auto;
   /*background-color: #555;*/
   height: 500px;
@@ -219,12 +219,11 @@ address {
 
 /* Homepage images: */
 .max-width-wrapper {
-  /* display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
-  padding-left: 16px;
-  padding-right: 16px; */
+  flex-flow: column wrap;
+
 }
 
 .content-wrapper-top {
@@ -242,18 +241,20 @@ address {
   /* width: 50%; */
 }
 
-.top-plates figure {
-  width: 50%;
-  height: 200px;
-  margin: auto;
+.plate-1,
+.plate-2,
+.plate-3,
+.plate-4 {
+  border-top: 5px solid rgb(99, 97, 97);
+  border-bottom: 2.5px solid rgb(99, 97, 97);
+  height: 250px;
   overflow: hidden;
 }
 
-/* .top-plates figure img {
- width: 100%;
- overflow: hidden;
+.restaurant-image {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-  */
 
 
 
